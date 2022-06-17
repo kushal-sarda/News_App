@@ -15,7 +15,6 @@ const News = (props) => {
     const capitalizeFirstLetter = (string) => {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
-    
     useEffect(() => {
         
         document.title = `${capitalizeFirstLetter(props.category)} - NewsPedia`;
