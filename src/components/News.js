@@ -4,6 +4,7 @@ import Spinner from './Preloader'
 import PropTypes from 'prop-types'
 import InfiniteScroll from 'react-infinite-scroll-component'
 import { useEffect, useState } from 'react'
+import './News.css'
 const News = (props) => {
 
     const [articles, setArticles] = useState([]);
@@ -27,6 +28,7 @@ const News = (props) => {
     
             let parseddata = await data.json();
             props.setProgress(100);
+            console.log(parseddata);
             setArticles(parseddata.articles)
             setTotalResults(parseddata.totalResults);
             setLoading(false);
@@ -71,7 +73,7 @@ const News = (props) => {
     return (
         <div className='container my-3'>
 
-            <h1 className='text-center' style={{ margin: '35px 0px' }}>News-Pedia Top-Headlines from {capitalizeFirstLetter(props.category)} Headlines</h1>
+            <h1 className='text-center slide-right glow' style={{ margin: '35px 0px' }}>News-Pedia Top-Headlines from {capitalizeFirstLetter(props.category)} Headlines</h1>
             {/* {loading && <Spinner />} */}
             <InfiniteScroll
                 dataLength={articles.length}

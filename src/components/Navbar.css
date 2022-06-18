@@ -1,0 +1,20 @@
+
+
+@media only screen and (min-width: 992px) {
+    .navbar .navbar-nav .nav-link:hover {
+        background-color: #fff;
+    color: black;
+    border-radius: 45%;
+    font-size: 1.05rem;
+
+        
+    }
+}
+@media only screen and (max-width: 992px) {
+    .navbar .navbar-nav .nav-link:hover {
+        background-color: #fff;
+    color: black;
+    border-radius: 3px;
+    font-size: 1.05rem;      
+    }
+}

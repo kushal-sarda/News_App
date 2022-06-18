@@ -2,6 +2,7 @@ import './App.css'
 import React from 'react'
 import Navbar from './components/Navbar'
 import News from './components/News'
+import BacToTopButton from './components/BacToTopButton'
 import { useState } from 'react'
 import {
   BrowserRouter as Router,
@@ -12,7 +13,7 @@ import LoadingBar from 'react-top-loading-bar'
 
 const App = () => {
   const pageSize = 5;
-  const apiKey= process.env.REACT_APP_NEWS_API_KEY;
+  const apiKey = process.env.REACT_APP_NEWS_API_KEY;
   const [progress, setProgress] = useState(10);
 
   return (
@@ -37,6 +38,7 @@ const App = () => {
           <Route exact path="/technology"><News setProgress={setProgress} apiKey={apiKey} key="technology" pageSize={pageSize} country="in" category="technology" /></Route>
         </Switch>
       </Router>
+      <BacToTopButton />
     </div>
   )
 

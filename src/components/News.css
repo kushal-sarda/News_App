@@ -1,0 +1,28 @@
+.slide-right{
+    width: 100%;
+  }
+  
+  /***** Slide Right *****/
+  .slide-right {
+    animation: 3s slide-right;
+  }
+  @keyframes slide-right {
+    from {
+      margin-left: -100%;
+    }
+    to {
+      margin-left: 0%;
+    }
+  }
+  .glow {
+    
+      text-shadow : horizontal-shadow vertical-shadow blur color, horizontal-shadow vertical-shadow blur color;
+ 
+      color:#111;
+      text-shadow:1px 1px 1px rgb(58, 48, 48), 1px 1px 1px rgb(45, 42, 42);
+     
+      text-align:center;
+      
+   
+  }
+  

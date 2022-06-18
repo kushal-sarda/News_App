@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Preloader from './Preloader.gif'
 const Spinner = () => {
 
