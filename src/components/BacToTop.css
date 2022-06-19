@@ -32,3 +32,19 @@
 .to-top:hover:before{
 	transform: rotate(360deg);
 }
+@media only screen and (max-width: 713px) {
+
+	.to-top:before{
+	
+		margin-left:-.07em;
+		border:solid .13em white;
+		border-radius:10em;
+		width:1.4em;
+		height:1.4em;
+		line-height:1em;
+		padding-left: 0.13em;
+		border-color:inherit;
+		transition:transform .5s ease-in;
+	}
+
+}

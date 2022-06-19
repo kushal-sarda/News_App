@@ -11,7 +11,9 @@ const NewsItem = (props) => {
                         {source}
                     </span >
                 </div >
-                <img className="card-img-top" src={(!imageurl) ? "https://images.unsplash.com/photo-1585776245991-cf89dd7fc73a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" : imageurl} alt="Card image cap" />
+                <a target="_blank" href={newsUrl}>
+                    <img className="card-img-top" src={(!imageurl) ? "https://images.unsplash.com/photo-1585776245991-cf89dd7fc73a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" : imageurl} alt="Card image cap" />
+                </a>
                 <div className="card-body">
                     <h5 className="card-title">{title}...</h5>
                     <p className="card-text">{description}</p>
