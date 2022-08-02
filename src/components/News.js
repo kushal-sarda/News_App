@@ -79,7 +79,7 @@ const News = (props) => {
                 dataLength={articles.length}
                 next={fetchMoreData}
                 hasMore={articles.length !== totalResults}
-                loader={<Spinner />}>
+                loader={<Spinner />}> 
                 <div className="row" style={{ marginLeft: "10%", marginRight: "10%" }}>
 
 
